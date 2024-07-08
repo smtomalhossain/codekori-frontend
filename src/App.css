@@ -1,38 +1,436 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Plus Jakarta Sans";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button {
+  background-color: #0c0a25;
+  border-radius: 9px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  padding: 6px 12px;
+}
+.button-home {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #503af2;
+  border-radius: 9px;
+  padding: 20px 30px 20px 30px;
+  border: none;
+  width: max-content;
+  margin-inline: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header Menu */
+.header-wrapper {
+  background-color: #fafcff99;
+  padding: 30px 40px;
+  border-bottom: 2px solid rgb(0, 255, 255);
+}
+.menu-links a {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #444a4e;
+  text-decoration: none;
+  padding-right: 34px;
+}
+/* Header Menu End Here */
+
+/* Fast Hero Section */
+.text-hero-wrapper {
+  background-image: url(../public/images/G1.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-top-text h6 {
+  font-size: 16px;
+  background-color: #ffeecf;
+  width: max-content;
+  margin-inline: auto;
+  padding: 8px 15px;
+  border-radius: 50px;
+}
+
+.header-top-text h2 {
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 86px;
+  color: #0c0a25;
+}
+
+.header-top-text p {
+  font-size: 16px;
+  color: #6c8293;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* Fast Hero Section End Here */
+.image-1 {
+  width: 140px;
+  height: 260px;
+  border-radius: 90px 0px 0px 0px;
+}
+
+.image-2 {
+  width: 100%;
+  height: 165px;
+  border-radius: 0px 90px 0px 0px;
+}
+
+.image-3 {
+  width: 163px;
+  height: 163px;
+  border-radius: 0px 90px 0px 0px;
+  margin-top: 65px;
+  margin-bottom: -30px;
+}
+
+.image-4 {
+  width: 180px;
+  height: 345px;
+  border-radius: 0px 120px 0px 0px;
+  margin-top: 95px;
+  margin-left: -40px;
+}
+
+.image-5 {
+  width: 163px;
+  height: 94px;
+  border-radius: 0px 120px 0px 0px;
+  margin-top: 10px;
+  margin-left: -62px;
+}
+
+.image-6 {
+  width: 172px;
+  height: 144px;
+  border-radius: 90px 0px 0px 0px;
+  margin-top: 90px;
+  margin-left: -100px;
+}
+
+.image-7 {
+  width: 332px;
+  height: 196px;
+  border-radius: 0px 120px 0px 0px;
+  margin-left: -100px;
+}
+
+.top-text {
+  background-color: #ffeecf;
+  width: 100%;
+  height: 220px;
+  border-radius: 0px 90px 0px 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 43px;
 }
 
-.App-link {
-  color: #61dafb;
+.top-text-2 {
+  background-color: #c760a5;
+  width: 163px;
+  height: 200px;
+  border-radius: 0px 90px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 43px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-text-3 {
+  background-color: #7a7160;
+  width: 163px;
+  height: 209px;
+  border-radius: 90px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  margin-left: -62px;
 }
+
+.top-text-4 {
+  background-color: #92a9c7;
+  width: 120px;
+  height: 210px;
+  border-radius: 0px 90px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+/* Secund Hero Section End Here */
+
+/* Companies Section */
+.companies-home-wrapper {
+  background-color: #f8f8fc;
+  background-image: url(../public/images/Element-1.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.main-text {
+  text-align: center;
+  color: #6c8293;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.companies-list {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+/* Companies Section End Here */
+
+/* animation-card */
+.card-home-wrapper {
+  background-color: #0c0a25;
+  background-image: url(../public/images/Pattern.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 15%;
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.animation-card-top-text {
+  padding-left: 70px;
+  padding-right: 90px;
+}
+
+.animation-card-top-text h3 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+.animation-card-top-text h6 {
+  text-align: left;
+  color: #f7f7ff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.animation-card {
+  background-color: #ffd4ee;
+  border-radius: 20px;
+  height: 453px;
+  width: 285px;
+}
+
+.animation-cart-content h1 {
+  font-size: 130px;
+  font-weight: 600;
+  line-height: 130px;
+  color: #d0a2be;
+  text-align: end;
+}
+
+.animation-cart-content h4 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #0c0a25;
+  display: flex;
+  margin-top: 180px;
+  margin-left: 10px;
+}
+
+.animation-card-2 {
+  background-color: #d3fee8;
+  border-radius: 20px;
+  height: 453px;
+  width: 285px;
+}
+
+.animation-cart-content-2 h1 {
+  font-size: 130px;
+  font-weight: 600;
+  line-height: 130px;
+  color: #9ad9b8;
+  text-align: end;
+}
+
+.animation-cart-content-2 h4 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #0c0a25;
+  display: flex;
+  margin-top: 180px;
+  margin-left: 10px;
+}
+
+.animation-card-3 {
+  background-color: #c5e8ff;
+  border-radius: 20px;
+  height: 453px;
+  width: 285px;
+}
+
+.animation-cart-content-3 h1 {
+  font-size: 130px;
+  font-weight: 600;
+  line-height: 130px;
+  color: #85badd;
+  text-align: end;
+}
+
+.animation-cart-content-3 h4 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #0c0a25;
+  display: flex;
+  margin-top: 180px;
+  margin-left: 10px;
+}
+
+.animation-card-4 {
+  background-color: #d9d3ff;
+  border-radius: 20px;
+  height: 453px;
+  width: 285px;
+}
+
+.animation-cart-content-4 h1 {
+  font-size: 130px;
+  font-weight: 600;
+  line-height: 130px;
+  color: #b0aad9;
+  text-align: end;
+}
+
+.animation-cart-content-4 h4 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #0c0a25;
+  display: flex;
+  margin-top: 180px;
+  margin-left: 10px;
+}
+
+/* animation-card End Here */
+
+/* Custom Services */
+.custom-services-wrapper {
+  background-color: #f2f9ff80;
+  background-image: url(https://vivasoftltd.com/wp-content/uploads/2024/04/Premium-custom-services-bg-image.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.services-card-top-text {
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-top: 130px;
+}
+.services-card-top-text h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  color: #0c0a25;
+  font-style: normal;
+}
+
+.services-card-top-text h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #6c8293;
+}
+
+.services-card .icon {
+  font-size: 35px;
+  background-color: #d9d3ff;
+  padding: 5px;
+}
+
+.services-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.services-card p {
+  color: #6c8293;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.services-card-container {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Custom Services End Here */
+
+/* Custom Software Section */
+.product-card-home-wrapper{
+  background-color: #0C0A25;
+  background-image: url(https://vivasoftltd.com/wp-content/uploads/2024/04/Group-1321314135.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 9%;
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.product-card{
+  background-color: #d9d3ff;
+  height: 672px;
+  width: 426px;
+  border-radius: 10px;
+}
+
+.product-card-image img{
+  height: 276px;
+  width: 346px;
+  margin-top: 90px;
+  margin-left: 60px;
+}
+
+.product-cart-content h3{
+  color: #0C0A25;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+.product-cart-content p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #6C8293;
+  margin-top: 25px;
+  margin-left: 50px;
+
+}
+/* Custom Software Section End Here */
